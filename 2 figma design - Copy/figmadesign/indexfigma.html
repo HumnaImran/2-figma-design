@@ -1,0 +1,2827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/regular.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/solid.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    body{
+        background-color: #262661;
+       
+    }
+.sidebar {
+  height: 100vh; 
+  width: 236px;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: -240px;
+  background-color: #0A2942; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  
+  
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    height:45px;
+    width:45px;
+    background:#0A2942;
+    color:rgb(241, 235, 235);
+    font-size: 29px;
+    border: 1px solid #0a0a0a;
+    text-align: center;
+    line-height: 45px;
+    border-radius:  5px;
+    top:2%;
+    transition: all 0.5s ease;
+   
+    left:2%;
+    z-index: 1;
+
+}
+label #cancel{
+    opacity:0;
+    visibility: hidden;
+}
+#check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 230px;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+#check:checked ~  .cards .card{
+  margin-left: 11rem;
+  margin-right: -6rem;
+   transition: 1s all ease-in-out;
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+.headerimg{
+    width:175px;
+    height:54px;
+  margin-top: 3rem;
+   
+    
+}
+.sidebar p{
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 400;
+    color:white;
+}
+.sidebar button{
+   margin-bottom: 0.8rem;
+   width: 158px;
+   height:30px;
+   background-color: #262661;
+   border: none;
+   color:white;
+   border-radius: 9px;
+   font-size: 1.4rem;
+
+
+}
+.nav-items{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.power{
+    color: #FFFFFF99;
+    font-weight: 200;
+    font-size: 0.5rem;
+   margin-top: 4rem;
+
+
+
+
+}
+.footerimg{
+    width:108px;
+    height:46px;
+   
+
+
+  
+}
+.nav-items i{
+    margin-right: 1rem;
+
+}
+.header{
+    background-color: #262661;
+    display: flex;
+    position: relative;
+
+
+   
+}
+.search{
+    width:35.75rem;
+    height:2.8rem;
+    background-color: #242479;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:10%;
+   
+    position: relative;
+    margin-top: 3rem;
+   
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF99;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFFFFF99;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFFFFF99;
+}
+.search i{
+    color:white;
+    left:5%;
+    position: absolute;
+    
+
+}
+.search input{
+    color:white;
+     background-color: #242479;
+     border: none;
+     outline:none;
+     position: absolute;
+     left:10%;
+     width:11rem;
+
+   
+}
+
+.news{
+    color:white;
+    margin-top: 3.5rem;
+    position: absolute;
+    left:43%;
+    font-weight: 400;
+        font-size: 1.5rem;
+
+
+}
+.pnl{
+    color:white;
+    margin-top: 3.4rem;
+    margin-left: 2rem;
+    position: absolute;
+    left:46%;
+    font-weight: 400;
+        font-size: 1.7rem;
+
+}
+.bellimg{
+    margin-top: 3rem;
+   
+    position: absolute;
+    left:67%;
+    width:2.7rem;
+    height:2.8rem;
+    
+   
+
+}
+.flagimg{
+    margin-top: 3.5rem;
+    position: absolute;
+    left:72%;
+    width:2.7rem;
+    height:2rem;
+
+}
+.balance{
+    background-color: #242479;
+     border: none;
+     margin-top: 3.2rem;
+     position: absolute;
+     left:53%;
+     width:18rem;
+     color: #FFFFFF99;
+    height:2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+
+
+}
+.connect{
+    background-color: #242479;
+     border: none;
+     margin-top: 3.2rem;
+     position: absolute;
+     color: #FFFFFF99;
+     left:80%;
+     width:18rem;
+    height:2.4rem;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+
+
+
+}
+.back-section{
+    background: url('fifa2.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+
+}
+.back-section img{
+    width:50%;
+    height: 50%;
+    z-index: -1;
+  
+
+}
+
+.card-section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+   
+}
+.card-section img{
+    width:40%;
+    height:20%;
+
+
+
+
+}
+
+.back-img h4 pre{
+    position: absolute;
+    top:25%;
+    left:25%;
+    font-size: 32px;
+    color:#F4DE56; 
+    font-weight: 700;
+   
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    line-height: 3rem;
+
+}
+
+.back-img h5 {
+    position: absolute;
+    top:35%;
+    left:33%;
+    font-size: 28px;
+    color:#F4DE56; 
+    font-weight: 400;
+   
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    line-height: 3rem;
+
+}
+.recimg{
+    z-index: 0;
+    position: absolute;
+    top:25%;
+    left:32%;
+    width:35%;
+    height:21%;
+    
+   
+}
+.overlay{
+    background-color:  #3A3AB499;
+ 
+    position: absolute;
+    top:25%;
+    left:32%;
+    width:35%;
+    height:21%;
+}
+.boximg{
+    z-index: 1;
+    position: absolute;
+    top:24%;
+    left:52%;
+    width:22rem;
+    height:22rem;
+}
+.coinsimg{
+    z-index: 1;
+    position: absolute;
+    top:15%;
+    left:50%;
+    width:22rem;
+    height:22rem;
+}
+.cards{
+    margin-top: 3rem;
+    transition: 1s all ease-in-out;
+}
+.card{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 9px;
+height: auto;
+    background:#0A2942;
+    transition: 0.5s all ease-in-out;
+    
+
+}
+.col-12{
+    max-width: 80%;
+}
+.row{
+    padding-right: 5rem!important;
+}
+.card-header{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.card-header i{
+    color:white;
+}
+.card-header button{
+   
+   width: 15rem;
+   height:3rem;
+   background-color: #8c8cb4;
+   border: none;
+   color:white;
+   border-radius: 9px;
+
+
+}
+hr{
+    margin-top: 3px !important;
+    margin-bottom: 3px;
+}
+.card-header h6{
+    color:#fff ;
+
+}
+.text {
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+.text p{
+    color:green;
+   
+    margin-bottom:-0.1rem;
+}
+.text h6{
+    color:red;
+    margin-bottom:-0.1rem;}
+.button-card{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.button-card h4{
+    color: white;;
+}
+.mexico{
+    color:green;
+    width:10rem;
+       height:3.5rem;
+   background-color: #8c8cb4;
+   border: none;
+ font-size: 1.3rem;
+   border-radius: 9px;
+
+}
+.poland{
+    width:10rem;
+   height:3.5rem;
+   background-color: #8c8cb4;
+   border: none;
+   font-size: 1.3rem;
+   border-radius: 9px;
+color:red;
+
+}
+.text2 {
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.text2 p{
+    color: green;
+    margin-bottom:-0.1rem;
+}
+.text2 h6{
+    color:red;
+    margin-bottom:-0.1rem;
+}
+.last-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0rem 1rem 0rem;
+}
+.betbutn{
+    width: 11rem;
+   height:3.5rem;
+   font-size: 1.3rem;
+   background-color: #8c8cb4;
+   border: none;
+ color:#0A2942;
+   border-radius: 9px;
+}
+.content2{
+    background-color: transparent;
+    border: none !important;
+    box-shadow:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.walletbutton{
+    background-color: white;
+    width:15rem;
+    height:5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.walletbutton img{
+    width:15rem;
+    height:5rem;
+
+}
+.metamask{
+    background-color: white;
+    width:15rem;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+.metamask img{
+    width:4rem;
+    height:4rem;
+
+}
+
+
+ 
+.walletimg {
+        width: 200px;
+    }
+    
+    .button-close {
+        width:3rem;
+        height:3rem;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+    }
+
+    .button-wrap {
+       
+        display: flex;
+        color: white;
+        border: 1px solid #ced4da;
+        background-color: lightgrey;
+        border-radius: 13px;
+        padding: 3px;
+    }
+    .qrcode {
+        border: white 1px;
+        border-radius: 21px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 13px;
+        font-family: sans-serif;
+        color: deeppink;
+        margin-left: 7px;
+        background: white;
+    }
+    
+    .Desktop {
+        background: lightgrey;
+        border: lightgray 1px;
+        border-radius: 21px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 13px;
+        font-family: sans-serif;
+        margin-left: 93px;
+        color: deeppink;
+    }
+    
+    .para2 {
+        margin-top: 3rem;
+        font-size: 13px;
+        color: #6c757d;
+        ;
+    }
+    
+    .scan {
+        width:4rem;
+        height: 4rem;
+        margin-left: 46px;
+    }
+    .header-modal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        
+    }
+    .clipboard {
+        text-align: center;
+        font-size: 13px;
+        color: #6c757d;
+        margin-left: 92px;
+    }
+    .modal-content2{
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+    .modal-body2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+       
+      
+    }
+    .line{
+        margin-top: 1rem;
+        color: #6c757d;
+        font-size: 1.5rem;
+
+        
+    }
+    .scanner{
+        width:35rem;
+        height:35rem;
+    }
+    hr{
+        border-top: 1px solid rgb(245, 238, 238);
+    }
+
+    .bettcontent{
+        background-color: rgba(255, 253, 253, 0.7);
+        height:38rem !important;
+        
+       
+      
+    }
+    .next-sec{
+        margin-top: 5rem;
+    }
+    
+    .bet-header{
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      position: relative;
+     
+    }
+    .left-header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+      position: absolute;
+      left:2%;
+      top:3%;
+    }
+li.nav-item.dropdown{
+    margin-top: -1rem !important;
+    color:#0A2942 !important;
+        font-size:3.5rem !important;
+
+
+}
+a.nav-link.dropdown-toggle{
+    color:#0A2942 !important;
+
+}
+    #text{
+    color:#0A2942 !important;
+        font-size:4rem;
+
+}
+    
+    .right-header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      position: absolute;
+      right:2%;
+      top:3%;
+      
+    }
+    .left-header img{
+      width:1rem;
+      height:1rem;
+      
+    }
+    .left-header p{
+      font-size: 3rem;
+      color: #262661;
+    }
+    .right-header img{
+      position: relative;
+    }
+    .right-header h6{
+      position: absolute;
+      top:50%;
+      left:50%;
+      color:white;
+    }
+    .ellipse{
+        width:3rem;
+        height:3rem;
+    }
+    
+    .white{
+      background-color: white;
+      color: #262661;
+    }
+    .bet-button {
+        background-color:rgb(255, 255, 255,1);
+      color: #262661;
+      float:right;
+opacity: 1;
+      width: 16rem;
+ height:4rem;
+   font-size: 2rem;
+   text-align: center;
+  
+   
+   border: none;
+   
+ 
+  
+  
+
+    }
+    li.nav-item{
+        list-style: none;
+   list-style-type: none;
+
+    }
+    
+    .Qatar img{
+        width:1rem;
+        height:1rem;
+    }
+    .list p{
+        line-height: 0.7;
+    }
+
+    .bet-div{
+    
+      
+
+    }
+    .Qatar{
+      padding-top: 1rem;
+      
+    }
+    
+    .num{
+      padding-top: 1rem;
+    }
+    
+    .list{
+      padding-top: 1rem;
+    }
+    .Qatar button{
+        border-color: #242479;
+        font-weight: 700;
+        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+        
+    }
+    
+    .qat{
+        font-size: 1.5rem;
+        color:green;
+    }
+    .vs{
+        font-size: 1.5rem;
+        color:#242479;
+
+    }
+    .ecu{
+        font-size: 1.5rem;
+        color:red;
+    }
+    .match{
+        font-size: 1.5rem;
+        color:#242479;
+    }
+    .neg{
+        color:green;
+        font-size: 1.5rem;
+
+    }
+    .pos{
+        color:red;
+        font-size: 1.5rem;
+    }
+    .last-div{
+        margin:auto;
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    .last-div-one{
+        float:left
+    }
+    .last-div-one p{
+        line-height: 1.7;
+        color:#242479;
+
+
+    }
+    
+    .last-div-one{
+        display: flex;
+        justify-content:flex-start;
+        align-items:flex-start;
+        flex-direction: column;
+    }
+    .last-div-two{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .last-div-two p{
+        line-height: 2.5;
+         color:#242479;
+         font-weight: 900;
+
+    }
+   
+    .trash{
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:3rem;
+        height:5rem;
+    }
+    .relative i{
+        color:white;
+       
+       
+    }
+    .relative{
+       padding: 12px;
+        position: relative;
+       background-color:#242479; 
+       display: inline;
+       border-radius: 10px;
+
+    }
+    .button-trash{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .relative-bet p{
+        color:white;
+    }
+    .relative-bet button{
+        padding: 1rem ;
+      color:white;
+      border:none;
+      height:5rem;
+      font-size: 2rem;
+      font-weight: 600;
+        position: relative;
+       background-color:#242479; 
+       width:25rem;
+       outline: none;
+      
+       border-radius: 10px;
+
+    }
+@media(min-width:400px) and (max-width:600px){
+    
+.sidebar {
+  height: 100%; 
+  width: 200px;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: -240px;
+  background-color: #0A2942; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  
+
+}
+.check i{
+    width:2rem;
+    height:5rem;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    height:4rem;
+    width:4rem;
+    background:#0A2942;
+    color:rgb(241, 235, 235);
+    font-size: 2rem;
+    border: 1px solid #0a0a0a;
+    text-align: center;
+    line-height: 4rem;
+    border-radius:  5px;
+    top:2%;
+    transition: all 0.5s ease;
+   
+    left:2%;
+    z-index: 1;
+
+}
+label #cancel{
+    opacity:0;
+    visibility: hidden;
+}
+#check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 200px;
+    opacity: 1;
+    visibility: visible;
+
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+.headerimg{
+    width:175px;
+    height:54px;
+  margin-top: -5rem;
+   
+    
+}
+.sidebar p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    color:white;
+}
+.sidebar button{
+   margin-bottom: 0.5rem;
+   width: 158px;
+   height:30px;
+   background-color: #262661;
+   border: none;
+   color:white;
+   border-radius: 9px;
+
+}
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.power{
+    color: #FFFFFF99;
+    font-weight: 200;
+    font-size: 0.5rem;
+   margin-top: 4rem;
+
+
+
+
+}
+.footerimg{
+    width:108px;
+    height:46px;
+    margin:0rem 1rem 1rem 4rem;
+    
+
+
+  
+}
+    
+.header{
+    background-color: #262661;
+    display: flex;
+    position: relative;
+   
+  
+    
+
+   
+}
+.search{
+    width:15rem;
+    height:2.8rem;
+    background-color: #242479;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:10%;
+   
+    position: relative;
+    margin-top: 3rem;
+   
+}
+.search i{
+    color:white;
+    left:5%;
+    position: absolute;
+    
+
+}
+.search input{
+     background-color: #242479;
+     border: none;
+     position: absolute;
+     left:15%;
+     width:10rem;
+     border-radius: 9px;
+
+   
+}
+
+.news{
+    color:white;
+    margin-top: 3.5rem;
+    position: absolute;
+    left:36%;
+    font-weight: 400;
+        font-size: 1.3rem;;
+        
+
+
+}
+.pnl{
+    color:white;
+    margin-top: 3.6rem;
+    margin-left: 2rem;
+    position: absolute;
+    left:40%;
+    font-weight: 400;
+        font-size: 1.3rem;;
+        
+
+}
+.bellimg{
+    margin-top: 3.3rem;
+   
+    position: absolute;
+    left:66%;
+    width:2.3rem;
+    height:2.1rem;
+    
+   
+
+}
+.flagimg{
+    margin-top: 3.5rem;
+    position: absolute;
+    left:73%;
+    width:2.3rem;
+    height:2.1rem;
+
+}
+.balance{
+    background-color: #242479;
+     border: none;
+     margin-top: 3.4rem;
+     position: absolute;
+     left:49%;
+     width:10rem;
+    height:2.5rem;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+.connect{
+    background-color: #242479;
+     border: none;
+     margin-top: 3.6rem;
+     position: absolute;
+     left:82%;
+     width:13rem;
+    height:2.5rem;
+    text-align: center;
+    border-radius: 10px;
+
+
+
+}
+.cards{
+    margin-left:10rem;
+}
+}
+
+
+@media(min-width:600px) and (max-width:800px){
+   
+    .bettcontent{
+        background-color: rgba(255, 253, 253, 0.7);
+        height:40rem !important;
+        width:55vw;
+        margin-left: 5rem;;
+       
+       
+      
+    }
+    .Qatar button{
+        border-color: #242479;
+        font-weight: 700;
+        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+        width:12rem;
+    }
+    .sidebar {
+      height: 100%; 
+      width: 200px;
+      position: fixed; 
+      z-index: 1;
+      top: 0;
+      left: -240px;
+      background-color: #0A2942; 
+      overflow-x: hidden; 
+      padding-top: 60px; 
+      transition: 0.5s; 
+      
+    
+    }
+    .check i{
+        width:2rem;
+        height:5rem;
+    }
+    
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    
+    
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        height:4rem;
+        width:4rem;
+        background:#0A2942;
+        color:rgb(241, 235, 235);
+        font-size: 2rem;
+        border: 1px solid #0a0a0a;
+        text-align: center;
+        line-height: 4rem;
+        border-radius:  5px;
+        top:2%;
+        transition: all 0.5s ease;
+       
+        left:2%;
+        z-index: 1;
+    
+    }
+    label #cancel{
+        opacity:0;
+        visibility: hidden;
+    }
+    #check:checked ~ label #btn{
+        margin-left: 245px;
+        opacity: 0;
+        visibility: hidden;
+    
+    }
+    
+    #check:checked ~ label #cancel{
+        margin-left: 200px;
+        opacity: 1;
+        visibility: visible;
+    
+    }
+    #check:checked ~ .sidebar{
+        left:0;
+    }
+    
+    .headerimg{
+        width:175px;
+        height:54px;
+      margin-top: -5rem;
+       
+        
+    }
+    .sidebar p{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 400;
+        color:white;
+    }
+    .sidebar button{
+       margin-bottom: 0.5rem;
+       width: 158px;
+       height:30px;
+       background-color: #262661;
+       border: none;
+       color:white;
+       border-radius: 9px;
+    
+    }
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    .power{
+        color: #FFFFFF99;
+        font-weight: 200;
+        font-size: 0.5rem;
+       margin-top: 4rem;
+    
+    
+    
+    
+    }
+    .footerimg{
+        width:108px;
+        height:46px;
+        margin:0rem 1rem 1rem 4rem;
+        
+    
+    
+      
+    }
+        
+    .header{
+        background-color: #262661;
+        display: flex;
+        position: relative;
+       
+      
+        
+    
+       
+    }
+    .search{
+        width:18rem;
+        height:2.8rem;
+        background-color: #242479;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left:10%;
+       
+        position: relative;
+        margin-top: 3rem;
+       
+    }
+    .search i{
+        color:white;
+        left:5%;
+        position: absolute;
+        
+    
+    }
+    .search input{
+         background-color: #242479;
+         border: none;
+         position: absolute;
+         left:15%;
+         width:11rem;
+         border-radius: 9px;
+    
+       
+    }
+    
+    .news{
+        color:white;
+        margin-top: 3.5rem;
+        position: absolute;
+        left:34%;
+        font-weight: 400;
+        font-weight: 400;
+        font-size: 1.4rem;;
+        
+        
+
+        
+    
+    
+    }
+    .pnl{
+       
+        color:white;
+        margin-top: 3.6rem;
+        margin-left: 2rem;
+        position: absolute;
+        left:38%;
+        font-weight: 400;
+        font-size: 1.4rem;;
+        
+        
+    }
+    .bellimg{
+        margin-top: 3.3rem;
+       
+        position: absolute;
+        left:65%;
+        width:2.5rem;
+        height:2.1rem;
+        
+       
+    
+    }
+    .flagimg{
+        margin-top: 3.5rem;
+        position: absolute;
+        left:72%;
+        width:2.5rem;
+        height:2.1rem;
+    
+    }
+    .balance{
+        background-color: #242479;
+         border: none;
+         margin-top: 3.4rem;
+         position: absolute;
+         left:47%;
+         width:13rem;
+        height:2.5rem;
+        border-radius: 10px;
+        text-align: center;
+    
+    
+    }
+    .connect{
+        background-color: #242479;
+         border: none;
+         margin-top: 3.6rem;
+         position: absolute;
+         left:82%;
+         width:14rem;
+        height:2.5rem;
+        text-align: center;
+        border-radius: 10px;
+    
+    
+    
+    }
+    .cards{
+        margin-left:15rem;
+    }
+    }
+    
+    
+@media(min-width:800px) and (max-width:1000px){
+    .bettcontent{
+        background-color: rgba(255, 253, 253, 0.7);
+        height:38rem !important;
+        width:50vw;
+        margin-left: 5rem;;
+       
+       
+      
+    }
+    .sidebar {
+      height: 100%; 
+      width: 200px;
+      position: fixed; 
+      z-index: 1;
+      top: 0;
+      left: -240px;
+      background-color: #0A2942; 
+      overflow-x: hidden; 
+      padding-top: 60px; 
+      transition: 0.5s; 
+      
+    
+    }
+    .check i{
+        width:2rem;
+        height:5rem;
+    }
+    
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    
+    
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        height:4rem;
+        width:4rem;
+        background:#0A2942;
+        color:rgb(241, 235, 235);
+        font-size: 2rem;
+        border: 1px solid #0a0a0a;
+        text-align: center;
+        line-height: 4rem;
+        border-radius:  5px;
+        top:2%;
+        transition: all 0.5s ease;
+       
+        left:2%;
+        z-index: 1;
+    
+    }
+    label #cancel{
+        opacity:0;
+        visibility: hidden;
+    }
+    #check:checked ~ label #btn{
+        margin-left: 245px;
+        opacity: 0;
+        visibility: hidden;
+    
+    }
+    
+    #check:checked ~ label #cancel{
+        margin-left: 200px;
+        opacity: 1;
+        visibility: visible;
+    
+    }
+    #check:checked ~ .sidebar{
+        left:0;
+    }
+    
+    .headerimg{
+        width:175px;
+        height:54px;
+      margin-top: -5rem;
+       
+        
+    }
+    .sidebar p{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 400;
+        color:white;
+    }
+    .sidebar button{
+       margin-bottom: 0.5rem;
+       width: 158px;
+       height:30px;
+       background-color: #262661;
+       border: none;
+       color:white;
+       border-radius: 9px;
+    
+    }
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    .power{
+        color: #FFFFFF99;
+        font-weight: 200;
+        font-size: 0.5rem;
+       margin-top: 4rem;
+    
+    
+    
+    
+    }
+    .footerimg{
+        width:108px;
+        height:46px;
+        margin:0rem 1rem 1rem 4rem;
+        
+    
+    
+      
+    }
+        
+    .header{
+        background-color: #262661;
+        display: flex;
+        position: relative;
+       
+      
+        
+    
+       
+    }
+    .search{
+        width:22rem;
+        height:2.8rem;
+        background-color: #242479;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left:10%;
+       
+        position: relative;
+        margin-top: 3rem;
+       
+    }
+    .search i{
+        color:white;
+        left:5%;
+        position: absolute;
+        
+    
+    }
+    .search input{
+         background-color: #242479;
+         border: none;
+         position: absolute;
+         left:15%;
+         width:11rem;
+         border-radius: 9px;
+    
+       
+    }
+    
+    .news{
+        color:white;
+        margin-top: 3.5rem;
+        position: absolute;
+        left:34%;
+        font-weight: 400;
+        font-size: 1.5rem;;
+        
+        
+    
+    
+    }
+    .pnl{
+        color:white;
+        margin-top: 3.6rem;
+        margin-left: 2rem;
+        position: absolute;
+        left:38%;
+        font-weight: 400;
+        font-size: 1.5rem;;
+        
+    
+    }
+    .bellimg{
+        margin-top: 3.3rem;
+       
+        position: absolute;
+        left:65%;
+        width:2.5rem;
+        height:2.1rem;
+        
+       
+    
+    }
+    .flagimg{
+        margin-top: 3.5rem;
+        position: absolute;
+        left:72%;
+        width:2.5rem;
+        height:2.1rem;
+    
+    }
+    .balance{
+        background-color: #242479;
+         border: none;
+         margin-top: 3.4rem;
+         position: absolute;
+         left:47%;
+         width:15rem;
+        height:2.5rem;
+        border-radius: 10px;
+        text-align: center;
+    
+    
+    }
+    .connect{
+        background-color: #242479;
+         border: none;
+         margin-top: 3.6rem;
+         position: absolute;
+         left:82%;
+         width:14rem;
+        height:2.5rem;
+        text-align: center;
+        border-radius: 10px;
+    
+    
+    
+    }
+    .cards{
+        margin-left:16rem;
+    }
+    
+    .fade-show{
+        width:100vh;
+        height:100vh;
+    }
+    }
+
+ 
+    
+
+
+@media(max-width:400px){
+    
+    .sidebar {
+      height: 100%; 
+      width: 200px;
+      position: fixed; 
+      z-index: 1;
+      top: 0;
+      left: -240px;
+      background-color: #0A2942; 
+      overflow-x: hidden; 
+      padding-top: 60px; 
+      transition: 0.5s; 
+      
+    
+    }
+    .check i{
+        width:2rem;
+        height:5rem;
+    }
+    
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    
+    
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        height:4rem;
+        width:4rem;
+        background:#0A2942;
+        color:rgb(241, 235, 235);
+        font-size: 2rem;
+        border: 1px solid #0a0a0a;
+        text-align: center;
+        line-height: 4rem;
+        border-radius:  5px;
+        top:2%;
+        transition: all 0.5s ease;
+       
+        left:2%;
+        z-index: 1;
+    
+    }
+    label #cancel{
+        opacity:0;
+        visibility: hidden;
+    }
+    #check:checked ~ label #btn{
+        margin-left: 245px;
+        opacity: 0;
+        visibility: hidden;
+    
+    }
+    
+    #check:checked ~ label #cancel{
+        margin-left: 200px;
+        opacity: 1;
+        visibility: visible;
+    
+    }
+    #check:checked ~ .sidebar{
+        left:0;
+    }
+    
+    .headerimg{
+        width:175px;
+        height:54px;
+      margin-top: -5rem;
+       
+        
+    }
+    .sidebar p{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 400;
+        color:white;
+    }
+    .sidebar button{
+       margin-bottom: 0.5rem;
+       width: 158px;
+       height:30px;
+       background-color: #262661;
+       border: none;
+       color:white;
+       border-radius: 9px;
+    
+    }
+    .nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    .power{
+        color: #FFFFFF99;
+        font-weight: 200;
+        font-size: 0.5rem;
+       margin-top: 4rem;
+    
+    
+    
+    
+    }
+    .footerimg{
+        width:108px;
+        height:46px;
+        margin:0rem 1rem 1rem 4rem;
+        
+    
+    
+      
+    }
+        
+    .header{
+        background-color: #262661;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       
+      
+        
+    
+       
+    }
+    .search{
+        width:13rem;
+        height:2.8rem;
+        background-color: #242479;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left:10%;
+       flex-direction: column;
+        position: relative;
+        margin-top: 3rem;
+       
+    }
+    .search i{
+        color:white;
+        left:5%;
+        position: absolute;
+        
+        
+    
+    }
+    .search input{
+         background-color: #242479;
+         border: none;
+         position: absolute;
+         left:15%;
+         width:11rem;
+         border-radius: 9px;
+    
+       
+    }
+    
+    .news{
+        color:white;
+        margin-top: 3.5rem;
+        position: absolute;
+        left:37%;
+        font-weight: 400;
+        font-size: 1rem;;
+        
+    
+    
+    }
+    .pnl{
+        color:white;
+        margin-top: 3.6rem;
+        margin-left: 2rem;
+        position: absolute;
+        left:40%;
+        font-size: 1rem;
+    
+    }
+    .bellimg{
+        margin-top: 3.3rem;
+       
+        position: absolute;
+        left:69%;
+        width:2.3rem;
+        height:2.1rem;
+        
+       
+    
+    }
+    .flagimg{
+        margin-top: 3.5rem;
+        position: absolute;
+        left:75%;
+        width:2.3rem;
+        height:2.1rem;
+    
+    }
+    .balance{
+        background-color: #242479;
+         border: none;
+         margin-top: 3.4rem;
+         position: absolute;
+         left:49%;
+         width:10rem;
+        height:2.5rem;
+        border-radius: 10px;
+        text-align: center;
+    
+    
+    }
+    .connect{
+        background-color: #242479;
+         border: none;
+         margin-top: 3.6rem;
+         position: absolute;
+         left:82%;
+         width:10rem;
+        height:2.5rem;
+        text-align: center;
+        border-radius: 10px;
+    
+    
+    
+    }
+    .cards{
+        margin-left:7rem;
+    }
+.card {
+    margin-bottom: 2rem;
+    margin-left: -3rem;
+    margin-right: 2rem;
+    border-radius: 9px;
+    height: auto;
+    width:33rem;
+    background: #0A2942;
+    transition: 0.5s all ease-in-out;
+}
+    
+.card-header{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.card-header i{
+    color:white;
+}
+
+hr{
+    margin-top: 3px !important;
+    margin-bottom: 3px;
+}
+.card-header h6{
+    color:#fff ;
+
+}
+.text {
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+.text p{
+    color:green;
+   
+    margin-bottom:-0.1rem;
+}
+.text h6{
+    color:red;
+    margin-bottom:-0.1rem;}
+.button-card{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.button-card h4{
+    color: white;;
+}
+.mexico{
+    color:green;
+    width:11rem;
+       height:3.5rem;
+   background-color: #8c8cb4;
+   border: none;
+ 
+   border-radius: 9px;
+
+}
+.poland{
+    width:11rem;
+   height:3.5rem;
+   background-color: #8c8cb4;
+   border: none;
+  
+   border-radius: 9px;
+color:red;
+
+}
+.text2 {
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.text2 p{
+    color: green;
+    margin-bottom:-0.1rem;
+}
+.text2 h6{
+    color:red;
+    margin-bottom:-0.1rem;
+}
+.last-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+
+#check:checked ~  .cards .card{
+  margin-left: 20rem;
+  margin-right: -17rem;
+   transition: 1s all ease-in-out;
+}
+
+
+.content2{
+    width:100vh;
+    background-color: transparent;
+    border: none !important;
+    box-shadow:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.walletbutton{
+    background-color: white;
+    width:15rem;
+    height:5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.walletbutton img{
+    width:15rem;
+    height:5rem;
+
+}
+.metamask{
+    background-color: white;
+    width:15rem;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+.metamask img{
+    width:4rem;
+    height:4rem;
+
+}
+
+
+ 
+.walletimg {
+        width: 200px;
+    }
+    
+    .button-close {
+        width:3rem;
+        height:3rem;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        margin-left:-2rem;
+    }
+    
+
+    .button-wrap {
+       
+        display: flex;
+        color: white;
+        border: 1px solid #ced4da;
+        background-color: lightgrey;
+        border-radius: 13px;
+        padding: 3px;
+    }
+    .qrcode {
+        border: white 1px;
+        border-radius: 21px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 13px;
+        font-family: sans-serif;
+        color: deeppink;
+        margin-left: 7px;
+        background: white;
+    }
+    
+    .Desktop {
+        background: lightgrey;
+        border: lightgray 1px;
+        border-radius: 21px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 13px;
+        font-family: sans-serif;
+        margin-left: 93px;
+        color: deeppink;
+    }
+    
+    .para2 {
+        margin-top: 3rem;
+        font-size: 13px;
+        color: #6c757d;
+        ;
+    }
+    
+    .scan {
+        width:4rem;
+        height: 4rem;
+        margin-left: 46px;
+    }
+    .header-modal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100vw;
+       
+        
+    }
+    .clipboard {
+        text-align: center;
+        font-size: 13px;
+        color: #6c757d;
+        margin-left: 92px;
+    }
+    .modal-content2{
+        background-color: transparent;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        width:100vh;
+    }
+    .modal-body2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        width:100vw;
+       
+      
+    }
+    .line{
+        margin-top: 1rem;
+        color: #6c757d;
+        font-size: 1.5rem;
+
+        
+    }
+    .scanner{
+        width:35rem;
+        height:35rem;
+    }
+    
+    .fade.show {
+        width:100% !important;
+        height:100% !important;
+    opacity: 1;
+}
+.Qatar button{
+        border-color: #242479;
+        font-weight: 700;
+        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+       height:auto;
+       width:10rem;
+    }
+    
+    }
+@media(max-width:998px){
+   html{
+      font-size: 45%;
+   }
+
+ 
+}
+
+
+@media(max-width:1300px){
+   html{
+      font-size: 45%;
+   }
+  
+   
+}
+
+@media(max-width:768px){
+   html{
+      font-size: 45%;
+   }
+
+}
+
+
+@media(max-width:600px){
+   html{
+      font-size: 35%;
+   }
+  
+
+}
+@media(max-width:700px){
+   html{
+      font-size: 45%;
+   }
+   
+
+}
+</style>
+<body>
+  
+<input type="checkbox" id="check">
+<label for="check" class="show-btn">
+    <i class="fa fa-bars" id="btn"></i>
+</label>
+
+<label for="check" class="hide-btn">
+    <i class="fa fa-times" id="cancel"></i>
+</label>
+    <div id="mySidebar" class="sidebar">
+      <img class="headerimg" src="Group 5.png">
+      <hr>
+      <p>Navigation</p>
+      <div class="nav-items">
+        <button><i class="fa fa-house-user"></i>Home</button>
+        <button><i class="fa fa-copy"></i>position</button>
+        <button><i class="fa fa-forward"></i>Reward</button>
+        <button><i class="fa fa-shield-halved"></i>Betting</button>
+        </div>
+<hr>
+        <p>Yield</p>
+        <div class="nav-items">
+          <button>Stalking</button>
+          <button>lotteries</button>
+          
+          </div>
+<hr>
+          <p>information</p>
+          <div class="nav-items">
+            <button>About QBbetting</button>
+            <button>Roadmap</button>
+            <button>Whitespaper</button>
+            <button>Terms and condition</button>
+            
+            </div>
+
+            <p class="power">Powered by</p>
+            <img class="footerimg container" src="Group 5.png">
+      </div>
+      
+    <div class="header">
+        <div class="search">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <i class="fa-thin fa-circle-2"></i> <input type="text" placeholder="Search match">
+
+        </div>
+        <p class="news">News</p>
+        <h5 class="pnl">pnl</h5>
+
+        <input class="balance" type="text" placeholder="Balance">
+        <img  class="bellimg" src="bell.png">
+        <img class="flagimg" src="flag.png">
+       
+ <!-- Button trigger modal -->
+<button type="button" class=" connect" data-toggle="modal" data-target="#exampleModalCenter">
+    Connect Wallet
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content content2 ">
+        <button type="button" class="btn  walletbutton" data-toggle="modal" data-target="#exampleModal"><img src="WalletConnect.png"></button>
+        
+
+       
+        
+          <button type="button" class="btn metamask"><img src="MetaMask.png">Meta Mask</button>
+      
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-content2">
+        <div class="modal-header header-modal"  style="border-bottom:none; background-color: transparent;">
+            <img src="WalletConnect.png" alt="" class="walletimg">
+
+            <button type="button" class="close button-close" style="border: 1px solid black;    "  data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" >&times;</span>
+              </button>
+        </div>
+
+        <div class="modal-body modal-body2">
+            <div class="button-wrap">
+<a href="https://web.whatsapp.com/"><button class="qrcode">QR Code</button></a>
+            <button class="Desktop">Desktop</button>
+
+        </div>
+        <p class="line">Scan QR code With a Walletconnect-campatible Wallet</p>
+        <img class="scanner" src="scanner.jpg">
+        <p class="line">Copy To Clipboard</p>
+      
+          </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+  
+  
+
+
+    </div>
+
+
+
+    
+<hr>
+<!-- rectangle img width coins bimg and coins box img -->
+
+<!-- <div class="back-img">
+    <img class="recimg"src="Rectangle 13.png">
+    <h4><pre>
+        Guess the champion
+        and get lotteries</pre></h4>
+    <h5>Stake and get 100% Apy</h5>
+    <img class="boximg" src="box.png">
+    <img class="coinsimg" src="coins.png">
+        <div class="overlay">
+            
+        </div> 
+
+       
+</div> -->
+
+
+<div class="cards container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+           
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn  betbutn" data-toggle="modal" data-target="#newexampleModal">Bett</button>
+        
+
+            <div class="modal fade" id="newexampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content bettcontent ">
+                   
+    
+                    <div class="modal-body bet-header ">
+                        <div class="left-header">
+                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Betslip</a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                              </li>
+                          </div>
+                          <div class="right-header">
+                           <img  class="ellipse" src="http://coachmikeblogs.com/wp-content/uploads/2016/09/blue-circle-number-1-1.png">
+                           <li class="nav-item">
+                            <a class="nav-link active bet-button" style="background-color: white;"href="#">My bets</a>
+                          </li>
+                          
+                           
+                          </div>
+                          <div class="next-sec container">
+                            <p>Singles</p>
+                            <div class="bet-div container" style="background-color: white;">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-4 list">
+                                            <p class="qat">Qatar</p>
+                                            <p class="vs">VS</p>
+                                            <p class="ecu">Ecuator</p>
+                                            <p class="match">Match odds</p>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-4 col-4 num">
+                                            
+                                            <p class="neg">-0.5</p>
+                                            <p class="pos">+0.5</p>
+                                        </div>
+
+
+                                        <div class="col-lg-4 col-md-4 col-4 Qatar">
+                                            
+                                           <img src="checkbox.png">Qatar
+                                           <button>0 BUSD</button>
+                                           <p>Potential returns    0 BUSD </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+<div class="last-div container">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-6 last-div-one">
+                                        <p class="qat">Total Bett</p>
+                                        <p class="vs">Fee</p>
+                                        <p class="ecu">Potential returns</p>
+                                       
+                                    </div>
+
+                                    
+
+                                    <div class="col-lg-6 col-md-6 col-6  last-div-two">
+                                        
+                                        <p>0 BUSD </p>
+                                        <p>0 BUSD </p>
+                                       <p>0 BUSD </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+</div>
+
+<div class="button-trash">
+    <div class="relative">
+        <i class="fa fa-2x fa-trash"></i>
+        
+    </div>
+    <div class="relative-bet">
+      <button>BETT</button>
+        
+    </div>
+
+    
+    
+</div>
+                          </div>
+                      
+                  
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+
+    </div>
+    
+
+</div>
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="col-lg-4 col-md-6 col-12">
+    <div class="card">
+        <div class="card-header">
+            
+            <button>11-22-2022 12.00am</button>
+            <h6>Round 1</h6><i class="fa-regular fa-bell"></i>
+
+               
+        </div>
+        <hr>
+        <div class="text">
+            <p>Home</p>
+            <h6>Away</h6>
+
+        </div>
+        <div class="button-card">
+            <button class="mexico">Mexico</button>
+            <h4><b>VS</b></h4>
+            <button class="poland">Poland</button>
+        </div>
+        <div class="text2">
+            <p>-0.5</p>
+            <h6>+0.5</h6>
+        </div>
+        <div class="last-button">
+            <button class=" betbutn">Bett</button>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+</body>
+<script> $(document).ready(function() {
+    $("#MyModal").modal();
+  });
+  </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
